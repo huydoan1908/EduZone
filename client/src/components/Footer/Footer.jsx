@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="footer">
             <Container>
                 <Row>
-                    <Col md={6} lg={3}>
+                    <Col sm={6} lg={3} className="my-3">
                         <h2 className="fw-bold text-uppercase mb-3">Edu<span className='color-primary'>Zone</span></h2>
                         <h5>Ho Chi Minh City</h5>
                         <div className="email mt-3">
@@ -41,7 +41,7 @@ export default function Footer() {
                             </Link>
                         </div>
                     </Col>
-                    <Col md={6} lg={3}>
+                    <Col sm={6} lg={3} className="my-3">
                         <h4 className="mb-3">Category</h4>
                         <Link to="/" className="d-block my-2">Creative Writing</Link>
                         <Link to="/" className="d-block my-2">UI/UX</Link>
@@ -50,14 +50,14 @@ export default function Footer() {
                         <Link to="/" className="d-block my-2">Marketing</Link>
                         <Link to="/" className="d-block my-2">Coding</Link>
                     </Col>
-                    <Col md={6} lg={3}>
+                    <Col sm={6} lg={3} className="my-3">
                         <h4 className="mb-3">Quick Links</h4>
                         <Link to="/" className="d-block my-2">FAQ</Link>
                         <Link to="/" className="d-block my-2">Policy</Link>
                         <Link to="/" className="d-block my-2">Discussion</Link>
                         <Link to="/" className="d-block my-2">Term & Condition</Link>
                     </Col>
-                    <Col md={6} lg={3}>
+                    <Col sm={6} lg={3} className="my-3">
                         <h4 className="mb-3">Subcribes</h4>
                         <p>Worried miss our new? Get update from everywhere.</p>
                         <Form>
