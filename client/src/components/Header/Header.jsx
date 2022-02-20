@@ -1,12 +1,17 @@
-import { Container, Nav, Navbar, NavDropdown, Offcanvas, Form, FormControl, Button } from 'react-bootstrap'
-import { NavLink } from 'react-router-dom'
-import './Header.scss'
+import {
+    Container,
+    Nav,
+    Navbar,
+    NavDropdown,
+    Offcanvas
+} from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
     return (
         <Navbar expand="lg" bg="white" className="p-3 shadow-sm">
             <Container>
-                <Navbar.Brand href="/" className="text-uppercase fw-bold">EduZone</Navbar.Brand>
+                <Navbar.Brand href="/" className="text-uppercase fw-bold">Edu<span className='color-primary'>Zone</span></Navbar.Brand>
                 <Nav className="mx-auto d-none d-lg-flex">
                     <Nav.Link as={NavLink} to="/">Home</Nav.Link>
                     <Nav.Link as={NavLink} to="/courses">All Course</Nav.Link>
