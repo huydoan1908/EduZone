@@ -15,7 +15,7 @@ a {
 }
 .btn{
     padding: 1rem;
-    border: 1px solid $primary;
+    border: 1px solid $primary !important;
     background-color: $primary;
     font-weight: 500;
     color: $white!important;
