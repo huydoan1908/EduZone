@@ -1,6 +1,6 @@
 import { ProgressBar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './MyThumbnail.scss';
+import './MyCourses.scss';
 export default function Thumbnail() {
     return (
         <div className="thumbnail">
