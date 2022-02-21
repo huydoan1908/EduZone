@@ -1,0 +1,35 @@
+@import "../../style/_variable.scss";
+
+.thumbnail {
+    padding: 1.5rem;
+    border: 1px solid $cream;
+    border-radius: 1rem;
+    transition: ease 0.3s;
+    &:hover{
+        border: 1px solid $primary;
+    }
+    .thumbnail-img img{
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .teacher-info {
+        display: flex;
+        margin-bottom: .75rem;
+        .avatar {
+            max-width: 52px;
+            max-height: 52px;
+        }
+        >a{
+            color: $grey !important;
+            margin: 0 .5rem;
+            align-self: center;
+            transition: ease 0.3s;
+            &:hover{
+                color: $primary !important;
+            }
+        }
+    }
+    .progress {
+        height: 2px;
+    }
+}

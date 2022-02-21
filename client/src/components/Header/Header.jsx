@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Header() {
     return (
-        <Navbar expand="lg" bg="white" className="p-3 shadow-sm">
+        <Navbar expand="lg" bg="white" fixed="top" className="p-3 shadow-sm">
             <Container>
                 <Navbar.Brand href="/" className="text-uppercase fw-bold">Edu<span className='color-primary'>Zone</span></Navbar.Brand>
                 <Nav className="mx-auto d-none d-lg-flex">
