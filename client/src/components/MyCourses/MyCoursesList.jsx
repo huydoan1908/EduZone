@@ -3,15 +3,15 @@ import {
     Row,
     Col,
 } from 'react-bootstrap';
-import MyThumbnail from './MyThumbnail';
+import MyCourses from './MyCourses';
 
 export default function ThumnailList(){
     return (
         <Container>
             <Row>
-                <Col><MyThumbnail /></Col>
-                <Col><MyThumbnail /></Col>
-                <Col><MyThumbnail /></Col>
+                <Col><MyCourses /></Col>
+                <Col><MyCourses /></Col>
+                <Col><MyCourses /></Col>
             </Row>
         </Container>
     )
