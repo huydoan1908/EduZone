@@ -9,9 +9,9 @@ export default function ThumnailList(){
     return (
         <Container>
             <Row>
-                <Col><MyCourses /></Col>
-                <Col><MyCourses /></Col>
-                <Col><MyCourses /></Col>
+                <Col lg={4} md={6}><MyCourses /></Col>
+                <Col lg={4} md={6}><MyCourses /></Col>
+                <Col lg={4} md={6}><MyCourses /></Col>
             </Row>
         </Container>
     )

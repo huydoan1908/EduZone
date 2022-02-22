@@ -1,14 +1,42 @@
+import React from 'react';
 import { ProgressBar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './MyCourses.scss';
 export default function Thumbnail() {
+    const [showMore, setShowMore] = React.useState(false);
+    function handleClick(e) {
+        setShowMore(prev => !prev);
+    }
+    const moreTab = <div className="more-tab">
+        <Link to="#">
+            <i class="fa-solid fa-share"></i>
+            Share
+        </Link>
+        <Link to="#">
+            <i class="fa-solid fa-plus"></i>
+            Create Collection
+        </Link>
+        <Link to="#">
+            <i class="fa-solid fa-star"></i>
+            Favorite
+        </Link>
+        <Link to="#">
+            <i class="fa-solid fa-box-archive"></i>
+            Archive
+        </Link>
+    </div>;
     return (
         <div className="thumbnail">
             <Link to="#">
                 <div className="thumbnail-img">
+                    <button className='more-toggle' onClick={handleClick}>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                    {showMore && moreTab}
+
                     <img
                         src="https://template.hasthemes.com/edule/eduLe/assets/images/courses/courses-01.jpg"
-                        alt="Thumbnail Image"
+                        alt="Thumbnail"
                     />
                 </div>
             </Link>
