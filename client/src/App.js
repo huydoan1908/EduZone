@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Homepage from './components/Homepage/Homepage';
 import MyCoursesList from './components/MyCourses/MyCoursesList'
 import './style/_reset.scss';
 import './style/_global.scss';
@@ -11,10 +12,11 @@ function App() {
       <Header />
       <div className="content">
         <Routes>
-          <Route path='/' element={<h1>Home</h1>} />
+          <Route path='/' element={<Homepage />} />
           <Route path='/courses' element={<MyCoursesList />} />
         </Routes>
       </div>
+      
       <Footer />
     </div>
   );
