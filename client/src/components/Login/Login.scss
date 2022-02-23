@@ -1,0 +1,62 @@
+@import "../../style/_variable.scss";
+
+.login-wrapper {
+    margin: 2rem 10rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 4rem;
+    border: 1px $primary solid;
+    .login-image {
+        // margin: 4rem;
+        padding: 2rem 2rem 0 2rem;
+        border-radius: 1rem;
+        background-color: $primary-background;
+        .img{
+            width: 70%;
+        }
+    }
+    .login-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 4rem;
+        width: 50%;
+        .title{
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 1.4;
+            padding-bottom: 10px;
+            margin-left: 4rem;
+            span{
+                color: $primary;
+            }
+            span::before{
+                position: absolute;
+                content: '';
+                background-image: url(https://template.hasthemes.com/edule/eduLe/assets/images/shape/shape-4.png);
+                background-position: center center;
+                background-size: cover;
+                width: 121px;
+                height: 13px;
+                bottom: 52%;
+                left: 61%;
+            }
+        }
+        .form{
+            width: 80%;
+            margin-left: 4rem;
+            .login-submit{
+            display: flex;
+            flex-direction: column;
+            .button{
+                width:100%;
+            }
+        }
+        }
+        
+    }
+    .form{
+        margin: 1rem 0 0 0 ;   
+    }
+}

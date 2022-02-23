@@ -25,7 +25,7 @@ export default function Header() {
                 </Nav>
                 <Nav className="d-none d-lg-flex">
                     <Nav.Link as={NavLink} to="/signUp">Sign Up</Nav.Link>
-                    <Nav.Link as={NavLink} to="/signUp" className="btn-invert px-4 py-2 align-self-center">Sign In</Nav.Link>
+                    <Nav.Link as={NavLink} to="/signIn" className="btn-invert px-4 py-2 align-self-center">Sign In</Nav.Link>
                 </Nav>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
                 <Navbar.Offcanvas

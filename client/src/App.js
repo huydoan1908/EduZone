@@ -2,6 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import MyCoursesList from './components/MyCourses/MyCoursesList'
+import Login from './components/Login/Login';
+import SignUp from './components/SignUp/SignUp'
 import './style/_reset.scss';
 import './style/_global.scss';
 
@@ -11,8 +13,10 @@ function App() {
       <Header />
       <div className="content">
         <Routes>
-          <Route path='/' element={<h1>Home</h1>} />
-          <Route path='/courses' element={<MyCoursesList />} />
+          <Route path="/" element={<h1>Home</h1>} />
+          <Route path="/courses" element={<MyCoursesList />} />
+          <Route path="/signIn" element={<Login />} />
+          <Route path="/signUp" element={<SignUp />} />
         </Routes>
       </div>
       <Footer />
