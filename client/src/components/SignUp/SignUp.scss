@@ -1,13 +1,13 @@
 @import "../../style/_variable.scss";
 
-.login-wrapper {
+.signup-wrapper {
     margin: 2rem 10rem;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: row;
     padding: 4rem 4rem;
     border: 1px $primary solid;
-    .login-image {
+    .signup-image {
         // margin: 4rem;
         padding: 2rem 2rem 0 2rem;
         border-radius: 1rem;
@@ -16,7 +16,7 @@
             width: 70%;
         }
     }
-    .login-form{
+    .signup-form{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -39,8 +39,8 @@
                 background-size: cover;
                 width: 121px;
                 height: 13px;
-                bottom: 60%;
-                left: 69%;
+                bottom: 60% !important;
+                left: 69% !important;
             }
         }
         .form{

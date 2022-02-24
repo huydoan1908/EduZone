@@ -4,12 +4,12 @@ import './SignUp.scss'
 export default function SignUp() {
   return (
     <>
-      <div className="login-wrapper">
-        <div className="login-image">
+      <div className="signup-wrapper">
+        <div className="signup-image">
           <img src="https://template.hasthemes.com/edule/eduLe/assets/images/register-login.png"></img>
         </div>
 
-        <div className="login-form">
+        <div className="signup-form">
           <div className="title">
             Registration
             <span> Now</span>
