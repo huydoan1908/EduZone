@@ -19,6 +19,7 @@ a {
     background-color: $primary;
     font-weight: 500;
     color: $white!important;
+    text-align: center;
     transition: 0.3s ease;
     &:hover{
         background-color: $white;
@@ -26,11 +27,12 @@ a {
     }
 }
 .btn-invert{
-    padding: .2rem 1rem;
+    padding: 1rem;
     border: 1px solid $primary;
     background-color: $white;
     font-weight: 500;
     border-radius: .25rem;
+    text-align: center;
     transition: 0.3s ease;
     &:hover{
         background-color: $primary;
