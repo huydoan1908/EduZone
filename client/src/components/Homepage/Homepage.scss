@@ -14,28 +14,30 @@
 }
 
 .homepage {
+    position: relative;
+    
+    .rotate__image {
+        width: 100px;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        animation: rotating 6s linear infinite;
+        z-index: 2;
+    }
 
     .banner {
-        height: 100vh;
-        background-color: $primary;
+        height: 700px;
+        background-color: $secondary;
         display: flex;
+        position: relative;
 
         .text {
             width: 40%;
-            padding: 140px 0px 0 90px;
-            padding-left: 90px;
+            padding-top: 140px;
             position: relative;
 
-            .rotate__image {
-                width: 100px;
-                position: absolute;
-                top: 10px;
-                left: 50px;
-                animation: rotating 6s linear infinite;
-            }
-
             h5 {
-                color: $text;
+                color: $primary;
             }
 
             h2 {
@@ -43,14 +45,14 @@
                 letter-spacing: 1px;
 
                 span {
-                    color: $text;
+                    color: $primary;
                 }
 
                 span::after {
+                    position: absolute;
                     content: '';
                     display: block;
                     font-size: 1rem;
-                    position: absolute;
                     width: 214px;
                     height: 20px;
                     right: 40px;
@@ -58,7 +60,6 @@
                     background-position: center center;
                     background-size: cover;
                     background-repeat: no-repeat;
-
                 }
             }
 
@@ -68,8 +69,9 @@
             }
 
             .button {
+                display: inline-block;
                 position: relative;
-                background-color: $text;
+                background-color: $primary;
                 color: $white !important;
                 margin-top: 20px;
                 font-weight: 500;
@@ -99,9 +101,81 @@
             }
         }
 
-        .image {}
+        .image {
+            position: absolute;
+            bottom: 0;
+            left: 45%;
+            display: flex;
+            align-items: flex-end;
+            z-index: 2;
+            img{
+                width: 90%;
+            }
+        }
 
-        .rating {}
+        .circle{
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .arrow{
+                position: absolute;
+            }
+
+            span,i{
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        }
+
+        .rating {
+            background-color: #fff;
+            top: 70px;
+            right: 50px;
+
+            span{
+                font-size: 2rem;
+                color: $primary;
+                
+                i{
+                    font-size: 1rem;
+                    color: $star;
+                }
+            }
+
+            .arrow{
+                bottom: -150px;
+                animation: updown 2s linear infinite;
+            }
+        }
+        
+        .static{
+            top: 28%;
+            left: 50%;
+            color: $white;
+            background-color: $primary;
+
+            .arrow{
+                top: 10px;
+                right: -100px;
+                animation: leftright 2s linear infinite;
+            }
+
+            .pattern{
+                position: absolute;
+                bottom: -30px;
+            }
+
+            p{
+                color: $white;
+            }
+        }
+
     }
 }
 
@@ -112,6 +186,34 @@
 
     to {
         transform: rotate(360deg);
-
     }
+}
+
+@keyframes updown {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(20px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes leftright {
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(20px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+    
 }
