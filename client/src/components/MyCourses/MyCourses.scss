@@ -1,5 +1,53 @@
 @import "../../style/_variable.scss";
 
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $secondary;
+    padding: 2rem;
+    border-radius: 1rem;
+    @media screen and (min-width: 992px) {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .search-bar{
+        position: relative;
+        display: flex;
+        height: 100%;
+        min-height: 70px;
+        padding: .5rem .75rem;
+        button{
+            position: absolute;
+            padding: 0;
+            height: 40px;
+            width: 40px;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        input{
+            border-radius: .75rem;
+        }
+    }
+    .nav-group {
+        display: flex;
+        flex-wrap: wrap;
+        .btn-invert{
+            border: 1px solid $light-grey;
+            border-radius: .75rem;
+        }
+        >*{
+            padding: .5rem .75rem;
+        }
+    }
+    .active {
+        padding: 1rem;
+        border: 1px solid $primary !important;
+        background-color: $primary;
+        font-weight: 500;
+        color: $white !important;
+    }
+}
 .thumbnail {
     padding: 1.5rem;
     border: 1px solid $cream;
@@ -28,32 +76,32 @@
             height: 36px;
             width: 36px;
             z-index: 1;
-            i{
+            i {
                 line-height: 36px;
                 font-size: 1.2rem;
             }
         }
-        .more-tab{
+        .more-tab {
             position: absolute;
             top: 28px;
             right: 28px;
             display: flex;
             flex-direction: column;
-            padding: .75rem 1.5rem;
+            padding: 0.75rem 1.5rem;
             background-color: $primary;
-            font-size: .9rem;
+            font-size: 0.9rem;
             border-radius: 1rem;
             opacity: 0.9;
-            a{
-                padding: .2rem 0;
+            a {
+                padding: 0.2rem 0;
                 color: $white !important;
                 font-weight: 400;
-                &:hover{
+                &:hover {
                     opacity: 0.7;
                 }
-                i{
-                    font-size: .8rem;
-                    margin-right: .8rem;
+                i {
+                    font-size: 0.8rem;
+                    margin-right: 0.8rem;
                 }
             }
         }
