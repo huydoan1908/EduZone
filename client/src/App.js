@@ -2,7 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Homepage from './components/Homepage/Homepage';
-import MyCoursesList from './components/MyCourses/MyCoursesList'
+import MyCoursesList from './components/MyCourses/MyCoursesList';
+import Error from './components/Error/Error';
 import './style/_reset.scss';
 import './style/_global.scss';
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/courses' element={<MyCoursesList />} />
+          <Route path='*' element={<Error />} />
         </Routes>
       </div>
       
