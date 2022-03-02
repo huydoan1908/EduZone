@@ -1,33 +1,27 @@
 @import "../../style/_variable.scss";
-
-.login-wrapper {
-    margin: 2rem 10rem;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    padding: 4rem 4rem;
+.login-container{
     border: 1px $primary solid;
-    .login-image {
-        // margin: 4rem;
+    border-radius: 0.5rem;
+    .row{
+        padding: 4rem;
+        .login-image {
         padding: 2rem 2rem 0 2rem;
         border-radius: 1rem;
-        background-color: $primary-background;
-        .img{
-            width: 70%;
+        background-color: $secondary;
+            img{
+
+            }
         }
-    }
-    .login-form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 4rem;
-        width: 50%;
-        .title{
+        .login-form{
+            margin-top: 35px;
+            max-width:400px;
+            margin-left: 20%;
+            .title{
+            position: relative;
             font-size: 40px;
             font-weight: 500;
             line-height: 1.4;
             padding-bottom: 10px;
-            margin-left: 4rem;
             span{
                 color: $primary;
             }
@@ -39,24 +33,104 @@
                 background-size: cover;
                 width: 121px;
                 height: 13px;
-                bottom: 52% !important;
-                left: 61% !important;
+                bottom: 10% ;
+                left: 27% ;
+                
             }
         }
-        .form{
-            width: 80%;
-            margin-left: 4rem;
-            .login-submit{
-            display: flex;
-            flex-direction: column;
-            .button{
-                width:100%;
+            .form{
+                .login-submit{
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
+    }
+}
+
+
+@media screen and (max-width:580px)
+{
+    .login-container{
+        max-width:400px;
+            .row{
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                .login-image {
+                padding: 1rem;
+                border-radius: 1rem;
+                background-color: $secondary;
+                    img{
+                       width: 80%;
+                    }
+                }
+                .login-form{
+                padding: 0;
+                margin:auto;
+                    .title{
+                    
+                    span::before{
+                        display: none;
+                    }
+                }
+            }
         }
-        
     }
-    .form{
-        margin: 1rem 0 0 0 ;   
+}
+/*Mobile <740px*/
+@media screen and (min-width:580px)  and (max-width:46.25em) {
+        .login-container{
+            .row{
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                .login-image {
+                padding: 1rem;
+                border-radius: 1rem;
+                background-color: $secondary;
+                    img{
+                       width: 80%;
+                    }
+                }
+                .login-form{
+                margin:auto;
+                    .title{
+                    
+                    span::before{
+                        width: 100px;
+                        bottom: 10% ;
+                        left: 25% ;
+                        
+                    }
+                }
+            }
+        }
     }
+}
+/*Tablet width>=740px and width<1024px*/
+@media screen and (min-width:46.25em) and (max-width:64em) {
+    .login-container{
+        max-width: 740px;
+        .row{
+            .login-form{
+                .title{
+                    font-size:35px;
+                    span::before{
+                        width: 100px;
+                        height: 13px;
+                        bottom: 10% ;
+                        left: 40% ;
+                    }
+                }
+            }
+        }
+    }
+}
+/*PC width>=1024px*/
+@media screen and (min-width:64em) {
+   .login-container{
+       min-width: 1000px;
+       max-width: 1100px;
+   }
 }

@@ -1,33 +1,27 @@
 @import "../../style/_variable.scss";
-
-.signup-wrapper {
-    margin: 2rem 10rem;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    padding: 4rem 4rem;
+.signup-container{
     border: 1px $primary solid;
-    .signup-image {
-        // margin: 4rem;
+    border-radius: 0.5rem;
+    .row{
+        padding: 4rem;
+        .signup-image {
         padding: 2rem 2rem 0 2rem;
         border-radius: 1rem;
-        background-color: $primary-background;
-        .img{
-            width: 70%;
+        background-color: $secondary;
+            img{
+
+            }
         }
-    }
-    .signup-form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 4rem;
-        width: 50%;
-        .title{
-            font-size: 40px;
+        .signup-form{
+            margin-top: 35px;
+            max-width:400px;
+            margin-left: 20%;
+            .title{
+            position: relative;
+            font-size: 35px;
             font-weight: 500;
             line-height: 1.4;
             padding-bottom: 10px;
-            margin-left: 4rem;
             span{
                 color: $primary;
             }
@@ -39,24 +33,114 @@
                 background-size: cover;
                 width: 121px;
                 height: 13px;
-                bottom: 60% !important;
-                left: 69% !important;
+                bottom: 10% ;
+                left: 50% ;
+                
             }
         }
-        .form{
-            width: 80%;
-            margin-left: 4rem;
-            .login-submit{
-            display: flex;
-            flex-direction: column;
-            .button{
-                width:100%;
+            .form{
+                .signup-submit{
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
+    }
+}
+
+
+@media screen and (max-width:580px)
+{
+    .signup-container{
+        max-width:300px;
+            .row{
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                .signup-image {
+                padding: 1rem;
+                border-radius: 1rem;
+                background-color: $secondary;
+                    img{
+                       width: 80%;
+                    }
+                }
+                .col-signup{
+                    .signup-form{
+                        padding: 0;
+                        margin:auto;
+                            .title{
+                            font-size: 30px;
+                            span::before{
+                                display: none;
+                            }
+                        }
+                        .signup-submit{
+                            .btn{
+                                padding: 0.5rem;
+                            }
+                        }
+                    }
+                }
         }
-        
     }
-    .form{
-        margin: 1rem 0 0 0 ;   
+}
+/*Mobile <740px*/
+@media screen and (min-width:580px)  and (max-width:46.25em) {
+        .signup-container{
+            .row{
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                .col:nth-child(2){
+                    margin-top: 0;
+                }
+                .signup-image {
+                padding: 1rem;
+                border-radius: 1rem;
+                background-color: $secondary;
+                    img{
+                       width: 80%;
+                    }
+                }
+                .signup-form{
+                margin:auto;
+                    .title{
+                    
+                    span::before{
+                        width: 100px;
+                        bottom: 5% ;
+                        left: 45% ;
+                        
+                    }
+                }
+            }
+        }
     }
+}
+/*Tablet width>=740px and width<1024px*/
+@media screen and (min-width:46.25em) and (max-width:64em) {
+    .signup-container{
+        max-width: 740px;
+        .row{
+            .signup-form{
+                .title{
+                    font-size:25px;
+                    span::before{
+                        width: 90px;
+                        height: 13px;
+                        bottom: 10% ;
+                        left: 60% ;
+                    }
+                }
+            }
+        }
+    }
+}
+/*PC width>=1024px*/
+@media screen and (min-width:64em) {
+   .signup-container{
+       min-width: 1000px;
+       max-width: 1100px;
+   }
 }
