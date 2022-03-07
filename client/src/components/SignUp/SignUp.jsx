@@ -6,11 +6,11 @@ export default function SignUp() {
     <>
       <Container className="signup-container">
         <Row>
-          <Col className="signup-image">
+          <Col lg="6" className="signup-image">
             <img src="https://template.hasthemes.com/edule/eduLe/assets/images/register-login.png"></img>
           </Col>
 
-          <Col className="col-signup">
+          <Col lg="6" className="signup-form-wrapper">
             <div className="signup-form">
               <div className="title">
                 Registration

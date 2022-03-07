@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import MyCoursesList from './components/MyCourses/MyCoursesList'
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp'
+import CourseDetail from './components/MyCourses/CourseDetail'
 import './style/_reset.scss';
 import './style/_global.scss';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/courses" element={<MyCoursesList />} />
           <Route path="/signIn" element={<Login />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/courseDetail" element={<CourseDetail />} />
         </Routes>
       </div>
       <Footer />

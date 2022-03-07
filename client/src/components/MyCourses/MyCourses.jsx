@@ -4,7 +4,7 @@ import './MyCourses.scss';
 export default function Thumbnail() {
     return (
         <div className="thumbnail">
-            <Link to="#">
+            <Link to="/courseDetail">
                 <div className="thumbnail-img">
                     <img
                         src="https://template.hasthemes.com/edule/eduLe/assets/images/courses/courses-01.jpg"
